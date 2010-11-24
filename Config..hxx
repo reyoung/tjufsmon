@@ -23,7 +23,7 @@
  *  Config File Name Defines
  *
  */
-#define ConfigFileName "/etc/fsmon_Config.ini"
+#define DefaultConfigFileName "/etc/fsmon_Config.ini"
 
 /** \brief
  *  Remove Fsmon Mutex and exit with code x

@@ -153,14 +153,14 @@ public:
      * \return void
      *
      */
-    void saveConfig();
+    void saveConfig(const std::string& ConfigFileName =DefaultConfigFileName );
 
     /** \brief
      *  Load Config Method
      * \return void
      *
      */
-    void loadConfig();
+    void loadConfig(const std::string& ConfigFileName =DefaultConfigFileName);
 
 #ifdef __DEBUG__
     /** \brief
