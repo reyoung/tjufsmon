@@ -309,7 +309,7 @@ void INotify::addEventFilter(boost::function<bool(const inotify_event&)> f)
     this->mdata->filter_functions.push_back(ft);
 }
 
-void INotify::saveConfig()
+void INotify::saveConfig(const std::string& ConfigFileName)
 {
 //    ConfigDataStruct config;config.setValue(*this->mdata);
     string rmcommand = "rm -f ";
@@ -334,7 +334,7 @@ void INotify::saveConfig()
     }
 }
 
-void INotify::loadConfig()
+void INotify::loadConfig(const std::string& ConfigFileName)
 {
     minIni ini(ConfigFileName);
     this->mdata->mask = ini.geti("Mask","Mask");
